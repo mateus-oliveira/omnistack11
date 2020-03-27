@@ -13,9 +13,9 @@ A aplicação original foi feita com acesso ao banco de dados SQLite, mas nesta 
 
 O relacionamento das tabelas no banco é relativamente simples, pois possui são apenas duas tabelas, uma chamada ongs e outra incidents. A cardinalidade entre as duas é de 1 para N, pois uma ONG pode cadastrar vários incidentes a serem resolvidos, mas cada registro de incidente está relacionado apenas à ONG que o cadastrou. 
 
-A imagem abaixo mostra uma foto do modelo conceitual do banco, montado no Workbench. Os arquivos do modelo conceitual e do script SQL estão na pasta [omnistack11/backend/db/](./backend/db/).
+A imagem abaixo mostra uma foto do modelo conceitual do banco, montado no Workbench. Os arquivos do modelo conceitual e do script SQL estão na pasta [omnistack11/backend/src/database/workbench/](./backend/src/database/workbench/).
 
-![UML](./backend/db/omnistack.png)
+![UML](./backend/src/database/workbench/omnistack.png)
 
 Para se conectar ao banco, mude suas credenciais user e password no arquivo [knexfile.js](./backend/knexfile.js). 
 
@@ -24,7 +24,7 @@ Em seguinda, para acessar o banco de dados desta aplicação no seu host, siga u
 ### Opção 1
 
 * Instale o MySQL e o Workbench;
-* Execute com o Workbench o script [omnisctack.sql](./backend/db/omnistack.sql).
+* Execute com o Workbench o script [omnisctack.sql](./backend/src/database/workbench/omnistack.sql).
 
 ### Opção 2
 
