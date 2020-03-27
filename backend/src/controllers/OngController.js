@@ -12,7 +12,7 @@ module.exports = {
             uf,
         });
 
-        return res.json(ong);
+        return res.json({"id": ong[0]});
     },
 
     async index(req, res){
