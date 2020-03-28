@@ -70,9 +70,27 @@ cd frontend
 npm install --save
 npm run start
 ```
-Com isso, a página da aplicação Be The Hero será aberta. Nela, uma ONG poderá se cadastrar e cadastrar seus incidentes. A ONG também poderá entrar em contato com outras ONGs para poder ajudar nos incidentes delas.
+Com isso, a página da aplicação Be The Hero será aberta. Nela, uma ONG poderá se cadastrar e cadastrar seus incidentes. Os incidentes poderão ser encontrados pelo app mobile, para que outras pessoas possam ajudar a resolvê-los.
 
 
 ## Mobile
 
-Frontend mobile, desenvolvido com o framework [React Native](https://reactnative.dev/) com o [EXPO](https://expo.io/).
+Frontend mobile, desenvolvido com o framework [React Native](https://reactnative.dev/) com o [EXPO](https://expo.io/). Nesta parte da aplicação, é possível entender diversos conceitos do React Native e do desenvolvimento mobile em geral. Conceitos como componentes, funções, rotas de navegação, e tudo sendo feito com Javascript. 
+
+Muito semelhante ao ReactJS e ao desenvolvimento web, no entanto, existem algumas pequenas difereças entre trabalhar com o React e o React Native, principalmente o fato de que no React Native sempre precisamos passar uma tag style que recebe um objeto com a estilização. Já no ReactJS, podemos podemos definir classes estilizadas, nas quais todos os objetos filhos dessa tag irão herdar esses estilos. 
+
+Além disso, no ReactJS, os elementos em tela possuem um significado semântico, ou seja, tem-se tags como a tag p para parágrafo, header para cabeçalho, e por ai vai. Já no React Native, não há semântica nos elementos, ou seja, independente de onde queira mostrar um texto na tela no celular, sempre terá de usar a tag Text por exemplo.
+
+No mais, é muito importante entender como o app mobile consegue se comunicar com a API por meio de requisições HTTP, as quais retornam ao frontend mobile como um objeto JSON (Java Script Object Notation), exatamente da mesma forma que o frontend web se comunica. Por isso, também foi utilizada a biblioteca axios para realizar a comunicação com a API.
+
+Para conseguir testar o mobile da aplicação, tenha certeza de ter feito as etapas anteriores, ou seja, criado o banco de dados e iniciado o serviço da API.
+
+Depois de clonar o repositório, basta executar os seguintes comandos no terminal:
+```bash
+cd mobile
+npm install --save
+npm run start
+```
+Com isso, uma página com o servidor local Metro Blunder será aberta, pelo EXPO. Nela aparecerá um QR Code, o qual você deverá escanear com o aplicativo Expo previamente instalado no seu celular. Após escanear, o aplicativo Be The Hero será instalado no seu celular.
+
+Neste app, o usuário poderá ver os incidentes cadastrados pelas ONGs e poderá entrar em contato por meio de email ou whatsapp para poder ajudar a resolvê-los.
